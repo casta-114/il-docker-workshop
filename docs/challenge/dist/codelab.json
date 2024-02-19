@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2024-02-19T19:12:28Z",
+  "id": "dist",
+  "duration": 15,
+  "title": "Hello python app in docker",
+  "summary": "Docker introduction",
+  "source": "challenge.md",
+  "theme": "",
+  "status": null,
+  "category": [
+    "docker",
+    "python"
+  ],
+  "tags": [
+    "docker",
+    "il",
+    "python",
+    "workshop"
+  ],
+  "url": "dist"
+}

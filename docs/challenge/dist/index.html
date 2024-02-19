@@ -1,0 +1,81 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Hello python app in docker</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14" ga4id=""></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  codelab-ga4id=""
+                  id="dist"
+                  title="Hello python app in docker"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Requirements" duration="10">
+        <ul>
+<li>git: <a href="https://desktop.github.com" target="_blank">https://desktop.github.com</a></li>
+<li>docker: <a href="https://www.docker.com/products/docker-desktop/" target="_blank">https://www.docker.com/products/docker-desktop/</a></li>
+</ul>
+<p><strong>Clone Repository:</strong></p>
+<ol type="1">
+<li>open a shell (for example: powershell)</li>
+<li>execute <code>git clone https://github.com/casta-114/il-docker-workshop.git</code></li>
+<li>execute <code>cd il-docker-workshop</code></li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Run App" duration="5">
+        <ol type="1">
+<li>execute <code>docker-compose up --build</code></li>
+<li>open <a href="http://localhost:8080" target="_blank">http://localhost:8080</a></li>
+<li>play</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Modify docker-compose" duration="0">
+        <p>Here we will add an environment variable in our app, using the docker-compose file.</p>
+<ol type="1">
+<li>open docker-compose.yaml</li>
+<li>under &#34;app:&#34; and the &#34;environment&#34; property with the key-value <code>World: "Terra"</code> like the image below:</li>
+</ol>
+<p class="image-container"><img alt="compose-environment" src="img/c265b12c55f92f9a.png"></p>
+<ol type="1" start="3">
+<li>if application is running, close it. Usually <code>ctrl + z</code> works</li>
+<li>execute <code>docker-compose up --build</code> to rebuild application</li>
+<li>open <a href="http://localhost:8080" target="_blank">http://localhost:8080</a></li>
+</ol>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
