@@ -10,7 +10,7 @@ categories: docker,python
 
 Duration: 0:5:00
 
-* git: [https://desktop.github.com](https://desktop.github.com)
+* git: [https://git-scm.com/downloads](https://git-scm.com/downloads)
 * docker: [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
 
 **Clone Repository:**
