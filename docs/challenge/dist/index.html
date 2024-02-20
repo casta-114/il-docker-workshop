@@ -28,7 +28,7 @@
                   environment="web"
                   feedback-link="">
     
-      <google-codelab-step label="Requirements" duration="10">
+      <google-codelab-step label="Requirements" duration="5">
         <ul>
 <li>git: <a href="https://desktop.github.com" target="_blank">https://desktop.github.com</a></li>
 <li>docker: <a href="https://www.docker.com/products/docker-desktop/" target="_blank">https://www.docker.com/products/docker-desktop/</a></li>
@@ -43,7 +43,7 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="Run App" duration="5">
+      <google-codelab-step label="Run App" duration="2">
         <ol type="1">
 <li>execute <code>docker-compose up --build</code></li>
 <li>open <a href="http://localhost:8080" target="_blank">http://localhost:8080</a></li>
@@ -53,11 +53,11 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="Modify docker-compose" duration="0">
+      <google-codelab-step label="Modify docker-compose" duration="5">
         <p>Here we will add an environment variable in our app, using the docker-compose file.</p>
 <ol type="1">
 <li>open docker-compose.yaml</li>
-<li>under &#34;app:&#34; and the &#34;environment&#34; property with the key-value <code>World: "Terra"</code> like the image below:</li>
+<li>under &#34;app:&#34; and the &#34;environment&#34; property with the key-value <code>WORLD: "Terra"</code> like the image below:</li>
 </ol>
 <p class="image-container"><img alt="compose-environment" src="img/c265b12c55f92f9a.png"></p>
 <ol type="1" start="3">
@@ -65,6 +65,26 @@
 <li>execute <code>docker-compose up --build</code> to rebuild application</li>
 <li>open <a href="http://localhost:8080" target="_blank">http://localhost:8080</a></li>
 </ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Go Hero" duration="20">
+        <p>Together, we will do an exercise where we create 3 docker containers.</p>
+<ol type="1">
+<li>postgresql, a container with a database</li>
+<li>brand_read, a container with an app that reads data from postgresql container</li>
+<li>brand_write, a container with an app that writes data to postgresql container</li>
+</ol>
+<p>All the python code for this exercise is inside folder <code>ex1/</code></p>
+<p>The objective here is to create the Docker file for each app, <code>brand_read/</code> and <code>brand_write/</code>, and the docker-compose file to orchestrate both apps and the postgresql container.</p>
+<p>In this exercise we will learn:</p>
+<ul>
+<li>how to pull and use images from <a href="https://hub.docker.com" target="_blank">docker hub</a></li>
+<li>create a network so that different containers can interact between each other</li>
+<li>use <code>depends_on</code> feature to create start dependencies between container</li>
+</ul>
+<p>Lets look at docker postgresql docker image in <a href="https://hub.docker.com/r/bitnami/postgresql" target="_blank">docker hub</a> and understand how to use it and configure it.</p>
 
 
       </google-codelab-step>
