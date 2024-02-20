@@ -32,7 +32,7 @@ Duration: 0:05:00
 Here we will add an environment variable in our app, using the docker-compose file.
 
 1. open docker-compose.yaml
-2. under "app:" and the "environment" property with the key-value `World: "Terra"` like the image below:
+2. under "app:" and the "environment" property with the key-value `WORLD: "Terra"` like the image below:
 
 ![compose-environment](./images/compose-environment.png)
 

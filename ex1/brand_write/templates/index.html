@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head><title>Brands</title>
+<body>
+<h3>Hi! please enter a brand name to insert in database</h3>
+<form method="POST"><input name="brand">
+    <input type="submit">
+</form>
+
+{% if name %}
+    <h2>Thank you, {{ brand }} was inserted</h2>
+{% endif %}
+</body>

@@ -147,3 +147,7 @@ cython_debug/
 
 # docs
 ~$*.pptx
+
+# ex1
+ex1/*/Dockerfile
+ex1/docker-compose.yaml
